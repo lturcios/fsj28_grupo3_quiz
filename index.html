@@ -4,10 +4,109 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <div class="contenido-header">
+        <div class="seleccionar-topico">
+          <div class="topico">
+            <img src="/images/icono-html.svg" alt="Icono HTML" class="icono-topico" />
+            <span class="texto-topico">HTML</span>
+          </div>
+        </div>
+        <div class="cambiar-tema">
+          <img src="/images/icono-sol.svg" alt="Icono Sol" class="icono-tema icono-sol" />
+          <label class="switch">
+            <input type="checkbox" id="cambiar-tema">
+            <span class="slider"></span>
+          </label>
+          <img src="/images/icono-luna.svg" alt="Icono Luna" class="icono-tema icono-luna" />
+        </div>
+      </div>
+    </header>
+
+    <main class="contenedor-quiz">
+      <section class="bienvenida active">
+        <h1>¡Bienvenido al Quiz!</h1>
+        <p>Seleccione una categoría para empezar</p>
+        <div class="lista-categorias">
+          <div class="categoria" data-categoria="html">
+            <img src="/images/icono-html.svg" alt="Icono HTML" />
+            <span>HTML</span>
+          </div>
+          <div class="categoria" data-categoria="css">
+            <img src="/images/icono-css.svg" alt="Icono CSS" />
+            <span>CSS</span>
+          </div>
+          <div class="categoria" data-categoria="js">
+            <img src="/images/icono-js.svg" alt="Icono JS" />
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz">
+        <div class="pregunta">
+          <p class="contador-preguntas">Pregunta <span id="numero-pregunta-actual">1</span> de <span id="numero-pregunta-total">10</span></p>
+          <h2 id="texto-pregunta"></h2>
+          <div class="contenedor-progressbar">
+            <div class="progressbar" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <div class="opciones">
+          <div class="opcion" data-respuesta="a">
+            <span class="opcion-letra">A</span>
+            <p class="texto-respuesta"></p>
+            <img src="/images/icono-correcto.svg" alt="Correcto" class="icono-feedback icono-correcto" />
+            <img src="/images/icono-incorrecto.svg" alt="Incorrecto" class="icono-feedback icono-incorrecto" />
+          </div>
+          <div class="opcion" data-respuesta="b">
+            <span class="opcion-letra">B</span>
+            <p class="texto-respuesta"></p>
+            <img src="/images/icono-correcto.svg" alt="Correcto" class="icono-feedback icono-correcto" />
+            <img src="/images/icono-incorrecto.svg" alt="Incorrecto" class="icono-feedback icono-incorrecto" />
+          </div>
+          <div class="opcion" data-respuesta="c">
+            <span class="opcion-letra">C</span>
+            <p class="texto-respuesta"></p>
+            <img src="/images/icono-correcto.svg" alt="Correcto" class="icono-feedback icono-correcto" />
+            <img src="/images/icono-incorrecto.svg" alt="Incorrecto" class="icono-feedback icono-incorrecto" />
+          </div>
+          <div class="opcion" data-respuesta="d">
+            <span class="opcion-letra">D</span>
+            <p class="texto-respuesta"></p>
+            <img src="/images/icono-correcto.svg" alt="Correcto" class="icono-feedback icono-correcto" />
+            <img src="/images/icono-incorrecto.svg" alt="Incorrecto" class="icono-feedback icono-incorrecto" />
+          </div>
+
+          <button class="boton-enviar">Enviar Respuesta</button>
+          <p class="mensaje-feedback"></p>
+        </div>
+      </section>
+
+      <section class="resultado">
+        <div class="resultado-resumen">
+          <h1>Quiz Finalizado!</h1>
+          <p>Tu puntaje es...</p>
+          <div class="puntaje-display">
+            <div class="topico-info">
+              <img src="/images/icono-html.svg" alt="Icono HTML" class="icono-topico" />
+              <span class="texto-topico">HTML</span>
+            </div>
+            <p class="puntaje-final">0</p>
+            <p class="puntaje-final-info"> de <span id="numero-pregunta-total">10</span></p>
+          </div>
+        </div>
+        <button class="boton-reiniciar">Reiniciar Quiz</button>
+    </main>
+    
     <script type="module" src="/src/main.js"></script>
+
   </body>
 </html>

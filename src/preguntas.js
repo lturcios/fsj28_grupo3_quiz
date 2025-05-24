@@ -206,95 +206,95 @@ export const quizPreguntas = [
         icono: "./",
         preguntas: [
             {
-            pregunta: "¿Cuál es el comando para iniciar un archivo con Node.js?",
-            opciones: [
-                "node archivo.js",
-                "npm archivo.js",
-                "start archivo.js",
-                "run archivo.js"
-            ],
-            respuesta: 0
-        },
-        {
-            pregunta: "¿Qué método se usa para mostrar un mensaje en la consola?",
-            opciones: [
-                "console.show()",
-                "console.log()",
-                "alert()",
-                "print()"
-            ],
-            respuesta: 1
-        },
-        {
-            pregunta: "¿Cómo se escribe un comentario de una sola línea en JavaScript?",
-            opciones: [
-                "# comentario",
-                "// comentario",
-                "<!-- comentario -->",
-                "** comentario **"
-            ],
-            respuesta: 1
-        },
-        {
-            pregunta: "¿Qué comando instala un paquete usando npm?",
-            opciones: [
-                "npm install paquete",
-                "npm get paquete",
-                "npm add paquete",
-                "npm put paquete"
-            ],
-            respuesta: 0
-        },
-        {
-            pregunta: "¿Cómo seleccionas un elemento por su id en el DOM?",
-            opciones: [
-                "document.getElementById('miId')",
-                "document.querySelector('.miId')",
-                "document.getElement('miId')",
-                "document.id('miId')"
-            ],
-            respuesta: 0
-        },
-        {
-            pregunta: "¿Qué método añade un elemento al final de un array?",
-            opciones: [
-                "push()",
-                "pop()",
-                "shift()",
-                "concat()"
-            ],
-            respuesta: 0
-        },
-        {
-            pregunta: "¿Cuál es el resultado de 2 + '2' en JavaScript?",
-            opciones: [
-                "4",
-                "22",
-                "NaN",
-                "Error"
-            ],
-            respuesta: 1
-        },
-        {
-            pregunta: "¿Qué función convierte una cadena a número entero?",
-            opciones: [
-                "parseInt()",
-                "parseFloat()",
-                "toString()",
-                "NumberString()"
-            ],
-            respuesta: 0
-        },
-        {
-            pregunta: "¿Cómo se accede al primer elemento de un array llamado 'colores'?",
-            opciones: [
-                "colores[0]",
-                "colores(0)",
-                "colores{0}",
-                "colores.0"
-            ],
-            respuesta: 0
-        }
+                pregunta: "¿Cuál es el comando para iniciar un archivo con  Node.js?",
+                opciones: [
+                    "node archivo.js",
+                    "npm archivo.js",
+                    "start archivo.js",
+                    "run archivo.js"
+                ],
+                respuesta: 0
+            },
+            {
+                pregunta: "¿Qué método se usa para mostrar un mensaje en la consola?",
+                opciones: [
+                    "console.show()",
+                    "console.log()",
+                    "alert()",
+                    "print()"
+                ],
+                respuesta: 1
+            },
+            {
+                pregunta: "¿Cómo se escribe un comentario de una sola línea en JavaScript?",
+                opciones: [
+                    "# comentario",
+                    "// comentario",
+                    "<!-- comentario -->",
+                    "** comentario **"
+                ],
+                respuesta: 1
+            },
+            {
+                pregunta: "¿Qué comando instala un paquete usando npm?",
+                opciones: [
+                    "npm install paquete",
+                    "npm get paquete",
+                    "npm add paquete",
+                    "npm put paquete"
+                ],
+                respuesta: 0
+            },
+            {
+                pregunta: "¿Cómo seleccionas un elemento por su id en el DOM?",
+                opciones: [
+                    "document.getElementById('miId')",
+                    "document.querySelector('.miId')",
+                    "document.getElement('miId')",
+                    "document.id('miId')"
+                ],
+                respuesta: 0
+            },
+            {
+                pregunta: "¿Qué método añade un elemento al final de un array?",
+                opciones: [
+                    "push()",
+                    "pop()",
+                    "shift()",
+                    "concat()"
+                ],
+                respuesta: 0
+            },
+            {
+                pregunta: "¿Cuál es el resultado de 2 + '2' en JavaScript?",
+                opciones: [
+                    "4",
+                    "22",
+                    "NaN",
+                    "Error"
+                ],
+                respuesta: 1
+            },
+            {
+                pregunta: "¿Qué función convierte una cadena a número entero?",
+                opciones: [
+                    "parseInt()",
+                    "parseFloat()",
+                    "toString()",
+                    "NumberString()"
+                ],
+                respuesta: 0
+            },
+            {
+                pregunta: "¿Cómo se accede al primer elemento de un array llamado 'colores'?",
+                opciones: [
+                    "colores[0]",
+                    "colores(0)",
+                    "colores{0}",
+                    "colores.0"
+                ],
+                respuesta: 0
+            }
         ]
     }
 ]

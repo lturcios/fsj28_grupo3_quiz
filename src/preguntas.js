@@ -11,49 +11,49 @@ export const quizPreguntas = [
           "Hyperlinks and Text Markup Language",
           "Hyper Tool Markup Language",
         ],
-        respuesta: 0,
+        respuestaCorrecta: "HyperText Markup Language",
       },
       {
         pregunta: "¿Cuál es el elemento principal para crear un enlace?",
         opciones: ["<img>", "<a>", "<link>", "<href>"],
-        respuesta: 1,
+        respuestaCorrecta: "<a>",
       },
       {
         pregunta: "¿Qué etiqueta se usa para insertar una imagen?",
         opciones: ["<img>", "<picture>", "<src>", "<image>"],
-        respuesta: 0,
+        respuestaCorrecta: "<img>",
       },
       {
         pregunta: "¿Cuál es la etiqueta correcta para un salto de línea?",
         opciones: ["<break>", "<br>", "<lb>", "<line>"],
-        respuesta: 1,
+        respuestaCorrecta: "<br>",
       },
       {
         pregunta:
           "¿Qué atributo se usa para especificar un texto alternativo en una imagen?",
         opciones: ["alt", "src", "title", "href"],
-        respuesta: 0,
+        respuestaCorrecta: "alt",
       },
       {
         pregunta: "¿Cuál es la etiqueta para crear una lista ordenada?",
         opciones: ["<ul>", "<ol>", "<li>", "<list>"],
-        respuesta: 1,
+        respuestaCorrecta: "<ol>",
       },
       {
         pregunta: "¿Qué etiqueta define el encabezado más grande?",
         opciones: ["<h6>", "<header>", "<h1>", "<head>"],
-        respuesta: 2,
+        respuestaCorrecta: "<h1>",
       },
       {
         pregunta:
           "Cuál es el elemento correcto para insertar una línea horizontal?",
         opciones: ["<hr>", "<line>", "<tr>", "<break>"],
-        respuesta: 0,
+        respuestaCorrecta: "<hr>",
       },
       {
         pregunta: "¿Cuál es la etiqueta correcta para definir un párrafo?",
         opciones: ["<text>", "<p>", "<par>", "<paragraph>"],
-        respuesta: 1,
+        respuestaCorrecta: "<p>",
       },
     ],
   },
@@ -69,27 +69,27 @@ export const quizPreguntas = [
           "Cascading Style Sheets",
           "Colorful Style Sheets",
         ],
-        respuesta: 2,
+        respuestaCorrecta: "Creative Style System",
       },
       {
         pregunta: "¿Cuál es la propiedad para cambiar el color del texto?",
         opciones: ["background-color", "color", "font-color", "text-style"],
-        respuesta: 1,
+        respuestaCorrecta: "color",
       },
       {
         pregunta: "¿Cómo se selecciona un elemento con id 'menu' en CSS?",
         opciones: [".menu", "#menu", "menu", "*menu"],
-        respuesta: 1,
+        respuestaCorrecta: "#menu",
       },
       {
         pregunta: "¿Qué propiedad se usa para cambiar el tamaño de la fuente?",
         opciones: ["font-size", "text-size", "font-style", "size"],
-        respuesta: 0,
+        respuestaCorrecta: "font-size",
       },
       {
         pregunta: "¿Cuál es el valor por defecto de la propiedad 'position'?",
         opciones: ["absolute", "fixed", "relative", "static"],
-        respuesta: 3,
+        respuestaCorrecta: "relative",
       },
       {
         pregunta: "¿Qué propiedad se usa para poner una imagen de fondo?",
@@ -99,7 +99,7 @@ export const quizPreguntas = [
           "background-img",
           "img-background",
         ],
-        respuesta: 0,
+        respuestaCorrecta: "background-image",
       },
       {
         pregunta: "¿Cómo se aplica un margen de 10px a todos los lados?",
@@ -109,18 +109,18 @@ export const quizPreguntas = [
           "margin: 0 10px;",
           "margin: all 10px;",
         ],
-        respuesta: 0,
+        respuestaCorrecta: "margin: 10px;",
       },
       {
         pregunta: "¿Cuál es la unidad relativa en CSS?",
         opciones: ["px", "em", "cm", "pt"],
-        respuesta: 1,
+        respuestaCorrecta: "em",
       },
       {
         pregunta:
           "¿Qué selector selecciona todos los elementos <p> dentro de un <div>?",
         opciones: ["div p", "div.p", "p div", "div+p"],
-        respuesta: 0,
+        respuestaCorrecta: "div p",
       },
       {
         pregunta:
@@ -131,7 +131,7 @@ export const quizPreguntas = [
           "visibility: hidden;",
           "hidden: true;",
         ],
-        respuesta: 2,
+        respuestaCorrecta: "visibility: hidden;",
       },
     ],
   },
@@ -147,12 +147,12 @@ export const quizPreguntas = [
           "start archivo.js",
           "run archivo.js",
         ],
-        respuesta: 0,
+        respuestaCorrecta: "node archivo.js",
       },
       {
         pregunta: "¿Qué método se usa para mostrar un mensaje en la consola?",
         opciones: ["console.show()", "console.log()", "alert()", "print()"],
-        respuesta: 1,
+        respuestaCorrecta: "console.log()",
       },
       {
         pregunta:
@@ -163,7 +163,7 @@ export const quizPreguntas = [
           "<!-- comentario -->",
           "** comentario **",
         ],
-        respuesta: 1,
+        respuestaCorrecta: "// comentario",
       },
       {
         pregunta: "¿Qué comando instala un paquete usando npm?",
@@ -173,7 +173,7 @@ export const quizPreguntas = [
           "npm add paquete",
           "npm put paquete",
         ],
-        respuesta: 0,
+        respuestaCorrecta: "npm install paquete",
       },
       {
         pregunta: "¿Cómo seleccionas un elemento por su id en el DOM?",
@@ -183,17 +183,17 @@ export const quizPreguntas = [
           "document.getElement('miId')",
           "document.id('miId')",
         ],
-        respuesta: 0,
+        respuestaCorrecta: "document.getElementById('miId')",
       },
       {
         pregunta: "¿Qué método añade un elemento al final de un array?",
         opciones: ["push()", "pop()", "shift()", "concat()"],
-        respuesta: 0,
+        respuestaCorrecta: "push()",
       },
       {
         pregunta: "¿Cuál es el resultado de 2 + '2' en JavaScript?",
         opciones: ["4", "22", "NaN", "Error"],
-        respuesta: 1,
+        respuestaCorrecta: "22",
       },
       {
         pregunta: "¿Qué función convierte una cadena a número entero?",
@@ -203,13 +203,13 @@ export const quizPreguntas = [
           "toString()",
           "NumberString()",
         ],
-        respuesta: 0,
+        respuestaCorrecta: "parseInt()",
       },
       {
         pregunta:
           "¿Cómo se accede al primer elemento de un array llamado 'colores'?",
         opciones: ["colores[0]", "colores(0)", "colores{0}", "colores.0"],
-        respuesta: 0,
+        respuestaCorrecta: "colores[0]",
       },
     ],
   },

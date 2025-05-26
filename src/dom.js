@@ -54,11 +54,16 @@ document.addEventListener("DOMContentLoaded", () => {
     botonEnviar.disabled = true;
   }
 
+  // ==========================================
+  // MANEJADORES DE EVENTSS - esta es la parte de interactividad del usuario
+  // =============================================
+
+  // aqui verificamos si al click fue en una category
   listaCategorias.addEventListener("click", (e) => {
     const categoriaDiv = e.target.closest(".categoria");
     if (!categoriaDiv) return;
 
-    const categoriaSeleccionada = categoriaDiv.dataset.categoria;
+    const categoriaSeleccionada = categoriaDiv.dataset.categoria; // Obtenemos la categoría
     const categoriaObj = quizPreguntas.find(
       (cat) => cat.categoria.toLowerCase() === categoriaSeleccionada
     );
@@ -70,25 +75,33 @@ document.addEventListener("DOMContentLoaded", () => {
     bienvenida.classList.remove("active");
     quiz.style.display = "block";
     resultado.style.display = "none";
+    // mostramos la  pregunta
     mostrarPregunta();
   });
 
+  // verificacion si el click fue en una de las options que hay
   opcionesContainer.addEventListener("click", (e) => {
     const opcionDiv = e.target.closest(".opcion");
     if (!opcionDiv) return;
 
+    // se encuentran todas las opciones para manipular el estado
     const opciones = opcionesContainer.querySelectorAll(".opcion");
     opciones.forEach((op) => op.classList.remove("seleccionada"));
-    opcionDiv.classList.add("seleccionada");
+    opcionDiv.classList.add("seleccionada"); //option d la clase 'seleccionada' a la opción clickeada
     respuestaSeleccionada =
       opcionDiv.querySelector(".texto-respuesta").textContent;
-    botonEnviar.disabled = false;
+    botonEnviar.disabled = false; // se habilita el button de enviar ahora que hay una selección
   });
 
+  /**
+   * maneja el envio de la respuesta seleccionada
+   * evalua si es correcta y actualiza la interfaz
+   */
   botonEnviar.addEventListener("click", () => {
     const pregunta = preguntasActuales[indicePreguntaActual];
     const opciones = opcionesContainer.querySelectorAll(".opcion");
 
+    //iterara sobre cada option para aplicar el feedback visual
     opciones.forEach((opcion) => {
       const texto = opcion.querySelector(".texto-respuesta").textContent;
       const iconoCorrecto = opcion.querySelector(".icono-correcto");
@@ -104,6 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (respuestaSeleccionada === pregunta.respuestaCorrecta) {
+      // verificand si la respuesta seleccionada es correcta
       puntaje++;
       mensajeFeedback.textContent = "¡Correcto!";
     } else {
@@ -112,6 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     botonEnviar.disabled = true;
 
+    //esto funciona par esperar 2 segundos antes de continuar (para dar tiempo a leer el feedback si es correct o incorrect, ya sabes you know)
     setTimeout(() => {
       indicePreguntaActual++;
       if (indicePreguntaActual < preguntasActuales.length) {
@@ -128,6 +143,10 @@ document.addEventListener("DOMContentLoaded", () => {
     mensajeFinal.textContent = `Tu puntaje fue ${puntaje} de ${preguntasActuales.length}`;
   }
 
+  /*
+    mnejamos el reinicio del quiz
+    vuelve a la pantalla de bienvenida
+   */
   botonReiniciar.addEventListener("click", () => {
     resultado.style.display = "none";
     bienvenida.classList.add("active");

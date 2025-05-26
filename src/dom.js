@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         mostrarResultado();
       }
-    }, 3000);
+    }, 2000);
   });
 
   function mostrarResultado() {

@@ -69,7 +69,7 @@ export const quizPreguntas = [
           "Cascading Style Sheets",
           "Colorful Style Sheets",
         ],
-        respuestaCorrecta: "Creative Style System",
+        respuestaCorrecta: "Cascading Style Sheets",
       },
       {
         pregunta: "¿Cuál es la propiedad para cambiar el color del texto?",
